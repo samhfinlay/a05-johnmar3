@@ -7,7 +7,7 @@ var db = require("./database.js")
 var md5 = require("md5")
 // Make Express use its own built-in body parser
 app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
+app.use(express.json()); 
 
 // Server port
 var HTTP_PORT = 5000 
